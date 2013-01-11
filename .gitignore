@@ -2,3 +2,7 @@
 .DS_Store
 
 sftp-config.json
+
+*.sublime-project
+
+*.sublime-workspace
