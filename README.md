@@ -1,9 +1,9 @@
-NKProgressHUD
+nk-progress-hud
 =============
 
-NKProgressHUD is a web HUD to preoccupy users during server-side tasks.
+nk-progress-hud is a web HUD to preoccupy users during server-side tasks.
 
-![NKProgressHUD](http://kadhom.com/NKProgressHUD/images/nk-progress-hud-screen.png)
+![nk-progress-hud](http://kadhom.com/NKProgressHUD/images/nk-progress-hud-screen.png)
 
 How to use
 ----------
@@ -51,4 +51,4 @@ You can dismiss the HUD by adding the following to the end of your script:
 
 ## Credits
 
-NKProgressHUD is brought to you by [Naoufal Kadhom](http://github.com/naoufal). The spinner icon was generated over at [Preloaders](http://preloaders.net/). NKPRogressHUD is inspired by [Sam Vermette](http://samvermette.com)'s [SVProgressBar](https://github.com/samvermette/SVProgressHUD).
+nk-progress-hud is brought to you by [Naoufal Kadhom](http://github.com/naoufal). The spinner icon was generated over at [Preloaders](http://preloaders.net/). nk-progress-hud is inspired by [Sam Vermette](http://samvermette.com)'s [SVProgressBar](https://github.com/samvermette/SVProgressHUD).
