@@ -3,7 +3,7 @@ nkProgressHUD
 
 nkProgressHUD is a web HUD that preoccupies users during server-side tasks.
 
-![nkProgressHUD](http://naoufal.com/projects/NKProgressHUD/images/nk-progress-hud-screen.png)
+![nkProgressHUD](http://kadhom.com/NKProgressHUD/images/nk-progress-hud-screen.png)
 
 How to use
 ----------
