@@ -18,10 +18,10 @@ To get started load files in the `head` section of your HTML document. Make sure
 
 Insert the following markup after the `body` section of your HTML document.
 
-    <div class="progressHUDPage">
-        <div class="progressHUDWrapper">
-            <div class="progressHUDSpinner">
-            <div class="progressHUDText">
+    <div class="nkProgressHUDPage">
+        <div class="nkProgressHUDWrapper">
+            <div class="nkProgressHUDSpinner">
+            <div class="nkProgressHUDText">
             <div class="clear"></div>
         </div>
     </div> 

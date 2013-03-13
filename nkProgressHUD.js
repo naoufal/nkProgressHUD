@@ -12,24 +12,24 @@
 
 //displays loader (best used at the beginning of a script)
 function showNKProgressHUD(loaderString) {  	
-	$('.progressHUDWrapper').show();
-	$('div.progressHUDText').html(loaderString)
-	$('.progressHUDWrapper').animate({marginTop: progressHUDWrapperStart,}, {duration: 1000,queue: false});
-	$('.progressHUDPage').fadeIn();
+	$('.nkProgressHUDWrapper').show();
+	$('div.nkProgressHUDText').html(loaderString)
+	$('.nkProgressHUDWrapper').animate({marginTop: nkProgressHUDWrapperStart,}, {duration: 1000,queue: false});
+	$('.nkProgressHUDPage').fadeIn();
 };
 
 //changes loader string (best used to inform user of a new task being performed)
 function changeNKProgressHUD(loaderString) {  	
-	$('div.progressHUDText').html(loaderString)
+	$('div.nkProgressHUDText').html(loaderString)
 };
 
 //hides loader (best used at the end of a script)
 function dismissNKProgressHUD() {  	
-	$('.progressHUDWrapper').animate({marginTop: progressHUDWrapperEnd,}, {duration: 1000,queue: false});
+	$('.nkProgressHUDWrapper').animate({marginTop: nkProgressHUDWrapperEnd,}, {duration: 1000,queue: false});
 	setTimeout(function() {
-		$('.progressHUDPage').fadeOut();
+		$('.nkProgressHUDPage').fadeOut();
 	}, 460);
-	$('.progressHUDWrapper').fadeOut();
+	$('.nkProgressHUDWrapper').fadeOut();
 
 };
 
@@ -51,12 +51,12 @@ function demoNKProgressHUD(loaderString) {
 
 
 var windowHeight = $(window).height();
-var progressHUDWrapperHeight = 270;
-var progressHUDWrapperStart;
-var progressHUDWrapperEnd;
+var nkProgressHUDWrapperHeight = 270;
+var nkProgressHUDWrapperStart;
+var nkProgressHUDWrapperEnd;
 
 $(document).ready(function() {
-	progressHUDWrapperStart = (windowHeight - progressHUDWrapperHeight) / 2;
-	progressHUDWrapperEnd = progressHUDWrapperStart + 50;
-	$('.progressHUDWrapper').css('margin-top', progressHUDWrapperEnd);
+	nkProgressHUDWrapperStart = (windowHeight - nkProgressHUDWrapperHeight) / 2;
+	nkProgressHUDWrapperEnd = nkProgressHUDWrapperStart + 50;
+	$('.nkProgressHUDWrapper').css('margin-top', nkProgressHUDWrapperEnd);
 });

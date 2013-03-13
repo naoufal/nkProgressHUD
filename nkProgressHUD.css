@@ -1,7 +1,7 @@
 /*! nkProgressHUD v1.0 http://naoufal.com/projects/nkprogresshud/ | Copyright 2012 Naoufal Kadhom - naoufalkadhom [at] gmail [dot] com */
 
 /* faded out page wrapper */
-.progressHUDPage {
+.nkProgressHUDPage {
 	width: 100%; 
 	height: 100%;
 	position: fixed;
@@ -12,7 +12,7 @@
 	background: url('images/nk_loader_overlay.png');
 }
 /* loader wrapper */
-.progressHUDWrapper {
+.nkProgressHUDWrapper {
 	width: 270px;
 	margin-left: auto;
 	margin-right: auto;
@@ -30,7 +30,7 @@
 	border-radius: 10px;
 }
 /* floader spinner */
-.progressHUDSpinner {
+.nkProgressHUDSpinner {
 	float: left;
 	width: 128px;
 	height: 128px;
@@ -42,7 +42,7 @@
 	background-repeat: no-repeat;
 }
 /* loader string */
-.progressHUDText {
+.nkProgressHUDText {
 	float: left;
 	width: 270px;
 	text-align: center;
