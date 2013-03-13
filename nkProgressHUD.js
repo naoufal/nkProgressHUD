@@ -22,7 +22,7 @@ function showNKProgressHUD(loaderString) {
 
 	// set heights to vertically align HUD
 	nkProgressHUDWrapperHeight = $('.nkProgressHUDWrapper').height();	
-	nkProgressHUDWrapperStart = ((windowHeight - nkProgressHUDWrapperHeight) / 2) - 50;
+	nkProgressHUDWrapperStart = ((windowHeight - nkProgressHUDWrapperHeight) / 2) - ((windowHeight / 100) * 5);
 	nkProgressHUDWrapperEnd = nkProgressHUDWrapperStart + 50;
 	$('.nkProgressHUDWrapper').css('margin-top', nkProgressHUDWrapperEnd);
 
