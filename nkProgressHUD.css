@@ -9,7 +9,7 @@
 	overflow: hidden;
 	top: 0;
 	z-index: 9999;
-	background: url('images/nk_loader_overlay.png');
+	background: url('assets/images/nk_loader_overlay.png');
 }
 /* loader wrapper */
 .nkProgressHUDWrapper {
@@ -39,7 +39,7 @@
 	margin-left: 71px;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	background-image: url('images/nk_loader_spinner.gif');
+	background-image: url('assets/images/nk_loader_spinner.gif');
 	background-repeat: no-repeat;
 }
 /* loader string */
@@ -81,7 +81,7 @@
 		margin-left: 40px;
 		margin-top: 20px;
 		margin-bottom: 20px;
-		background-image: url('images/nk_loader_spinner.gif');
+		background-image: url('assets/images/nk_loader_spinner.gif');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 	}
