@@ -10,14 +10,19 @@
  *
  */
 
+var windowHeight;
+var nkProgressHUDWrapperHeight;
+var nkProgressHUDWrapperStart;
+var nkProgressHUDWrapperEnd;
+
 //displays loader (best used at the beginning of a script)
 function showNKProgressHUD(loaderString) {  
 	//append html
 	$('body').append("<div class='nkProgressHUDPage'><div class='nkProgressHUDWrapper'><div class='nkProgressHUDSpinner'></div><div class='nkProgressHUDText'></div><div class='clear'></div></div></div>");
 
-	// set heights  
-	nkProgressHUDWrapperHeight = 270;	
-	nkProgressHUDWrapperStart = (windowHeight - nkProgressHUDWrapperHeight) / 2;
+	// set heights to vertically align HUD
+	nkProgressHUDWrapperHeight = $('.nkProgressHUDWrapper').height();	
+	nkProgressHUDWrapperStart = ((windowHeight - nkProgressHUDWrapperHeight) / 2) - 50;
 	nkProgressHUDWrapperEnd = nkProgressHUDWrapperStart + 50;
 	$('.nkProgressHUDWrapper').css('margin-top', nkProgressHUDWrapperEnd);
 
@@ -58,12 +63,6 @@ function demoNKProgressHUD(loaderString) {
 		dismissNKProgressHUD();
 	}, 5000);
 };
-//vertically centers ProgressHUD.
-var windowHeight;
-var nkProgressHUDWrapperHeight;
-var nkProgressHUDWrapperStart;
-var nkProgressHUDWrapperEnd;
-
 
 $(document).ready(function() {
 	windowHeight = $(window).height();

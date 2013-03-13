@@ -14,6 +14,7 @@
 /* loader wrapper */
 .nkProgressHUDWrapper {
 	width: 270px;
+	height: 270px;	
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #1A1A1A;
@@ -56,6 +57,7 @@
 @media (max-width: 767px) {
 	.nkProgressHUDWrapper {
 		width: 150px;
+		height: 150px;		
 		margin-left: auto;
 		margin-right: auto;
 		background-color: #1A1A1A;
