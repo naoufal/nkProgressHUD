@@ -1,9 +1,9 @@
 /*!
- * NKProgressHUD - jQuery Plugin
+ * nkProgressHUD - jQuery Plugin
  * version: 1.0 (Wed, 9 Jan 2013)
  * requires jQuery v1.6 or later
  *
- * Example at http://kadhom.com/NKProgressHUD/
+ * Example at http://naoufal.com/projects/nkprogresshud/
  * 
  *
  * Copyright 2012 Naoufal Kadhom - naoufalkadhom [at] gmail [dot] com

@@ -1,9 +1,9 @@
 nkProgressHUD
 =============
 
-nkProgressHUD is a web HUD that preoccupies users during server-side tasks.
+nkProgressHUD is a web HUD to preoccupy users during server-side tasks.
 
-![nkProgressHUD](http://kadhom.com/NKProgressHUD/images/nk-progress-hud-screen.png)
+![nkProgressHUD](http://naoufal.com/projects/nkprogresshud/images/nkProgressHUD-screen.png)
 
 How to use
 ----------
@@ -12,8 +12,8 @@ To get started load files in the `head` section of your HTML document. Make sure
 
     <head>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-        <link rel="stylesheet" href="/NKProgressHUD/nk-progress-hud.css" type="text/css" media="screen" />
-        <script type="text/javascript" src="/NKProgressHUD/nk-progress-hud.css"></script>
+        <link rel="stylesheet" href="/NKProgressHUD/nkProgressHUD.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="/NKProgressHUD/nkProgressHUD.css"></script>
     </head>
 
 Insert the following markup after the `body` section of your HTML document.
@@ -42,7 +42,7 @@ You can change the dispalyed text at anything during your script with the follow
 
     changeNKProgressHUD('New Text');
 
-##Dismissing the HUD
+###Dismissing the HUD
 
 You can dismiss the HUD by adding the following to the end of your script:
 
@@ -51,4 +51,4 @@ You can dismiss the HUD by adding the following to the end of your script:
 
 ## Credits
 
-nkProgressHUD is brought to you by [Naoufal Kadhom](http://github.com/naoufal). The spinner icon was generated over at [Preloaders](http://preloaders.net/). nkProgressHUD is inspired by [Sam Vermette](http://samvermette.com)'s [SVProgressHUD](https://github.com/samvermette/SVProgressHUD).
+nkProgressHUD is brought to you by [Naoufal Kadhom](http://github.com/naoufal). The spinner icon was generated over at [Preloaders](http://preloaders.net/). nkProgressHUD is inspired by [Sam Vermette](http://samvermette.com)'s [SVProgressBar](https://github.com/samvermette/SVProgressHUD).
