@@ -8,7 +8,7 @@ nkProgressHUD is a responsive web HUD that preoccupies users during server-side 
 How to use
 ----------
 
-To get started load files in the `head` section of your HTML document. Make sure you also add the jQuery library.
+To get started, include the files in the `head` section of your HTML document.  Make sure you're loading the jQuery library before nkProgressHUD.
 
     <head>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
