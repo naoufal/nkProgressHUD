@@ -26,6 +26,7 @@ function showNKProgressHUD(loaderString) {
 	nkProgressHUDWrapperEnd = nkProgressHUDWrapperStart + 50;
 	$('.nkProgressHUDWrapper').css('margin-top', nkProgressHUDWrapperEnd);
 
+	//start animation
 	$('.nkProgressHUDWrapper').show();
 	$('div.nkProgressHUDText').html(loaderString)
 	$('.nkProgressHUDWrapper').animate({marginTop: nkProgressHUDWrapperStart,}, {duration: 1000,queue: false});
