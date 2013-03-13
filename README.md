@@ -26,7 +26,7 @@ To get started, include the files in the `head` section of your HTML document.  
 
 ### Display the HUD
 
-You can display the HUD by initializing nkPRogressHUD like this:
+You can display the HUD by initializing nkProgressHUD like this:
 
     showNKProgressHUD(loaderString);
 
