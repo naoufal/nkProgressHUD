@@ -58,7 +58,7 @@ function demoNKProgressHUD(loaderString) {
 		changeNKProgressHUD('Modify Message');
 	}, 2000);
 	setTimeout(function() {
-		changeNKProgressHUD('Hide HUD');
+		changeNKProgressHUD('Dismiss HUD');
 	}, 3500);
 	setTimeout(function() {
 		dismissNKProgressHUD();
