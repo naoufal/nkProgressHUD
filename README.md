@@ -50,4 +50,4 @@ You can dismiss the HUD by adding the following to the end of your script:
 
 ## Credits
 
-nkProgressHUD is brought to you by [Naoufal Kadhom](https://twitter.com/naoufal). The spinner icon was generated over at [Preloaders](http://preloaders.net/), all other icons are from [Dave Gandy](https://github.com/davegandy)'s [Font-Awesome](http://fortawesome.github.com/Font-Awesome/). nkProgressHUD is inspired by [Sam Vermette](http://samvermette.com)'s [SVProgressBar](https://github.com/samvermette/SVProgressHUD).
+nkProgressHUD is brought to you by [Naoufal Kadhom](https://twitter.com/naoufal). The spinner icon was generated over at [Preloaders](http://preloaders.net/). nkProgressHUD is inspired by [Sam Vermette](http://samvermette.com)'s [SVProgressBar](https://github.com/samvermette/SVProgressHUD).
