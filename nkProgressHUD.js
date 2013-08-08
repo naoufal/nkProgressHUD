@@ -29,18 +29,22 @@ nkProgressHUD.Variables = {
 
 //Shows HUD (Default string is 'Loading')
 nkProgressHUD.show = function(loaderString){
+	//append html
+	$('body').append("<div class='nkProgressHUDPage'><div class='nkProgressHUDWrapper'><div class='nkProgressHUDSpinner'></div><div class='nkProgressHUDText'>Loading</div></div></div>");
+
+	// set heights to vertically align HUD
+	nkProgressHUD.Variables.properties.height = $('.nkProgressHUDWrapper').height();	
+	nkProgressHUD.Variables.properties.start = ((nkProgressHUD.Variables.globalVars.windowHeight - nkProgressHUD.Variables.properties.height) / 2) - ((nkProgressHUD.Variables.globalVars.windowHeight / 100) * 5);
+	nkProgressHUD.Variables.properties.end = nkProgressHUD.Variables.properties.start + 50;
+	$('.nkProgressHUDWrapper').css('margin-top', nkProgressHUD.Variables.properties.end);
+	
 	if (Modernizr.csstransforms3d){
-		console.log('show transform3d hud');
+		$('.nkProgressHUDWrapper').show();
+		$('div.nkProgressHUDText').html(loaderString)
+		$('.nkProgressHUDPage').addClass('animate').css({'opacity': 1,});	
+		$('.nkProgressHUDWrapper').addClass('animate-10s').css({'margin-top': nkProgressHUD.Variables.properties.start});	
+
 	} else {
-		//append html
-		$('body').append("<div class='nkProgressHUDPage'><div class='nkProgressHUDWrapper'><div class='nkProgressHUDSpinner'></div><div class='nkProgressHUDText'>Loading</div></div></div>");
-
-		// set heights to vertically align HUD
-		nkProgressHUD.Variables.properties.height = $('.nkProgressHUDWrapper').height();	
-		nkProgressHUD.Variables.properties.start = ((nkProgressHUD.Variables.globalVars.windowHeight - nkProgressHUD.Variables.properties.height) / 2) - ((nkProgressHUD.Variables.globalVars.windowHeight / 100) * 5);
-		nkProgressHUD.Variables.properties.end = nkProgressHUD.Variables.properties.start + 50;
-		$('.nkProgressHUDWrapper').css('margin-top', nkProgressHUD.Variables.properties.end);
-
 		//start animation
 		$('.nkProgressHUDWrapper').show();
 		$('div.nkProgressHUDText').html(loaderString)
@@ -53,11 +57,7 @@ nkProgressHUD.show = function(loaderString){
 
 //Changes HUD String (best used to inform user of a new task being performed)
 nkProgressHUD.change = function(loaderString){
-	if (Modernizr.csstransforms3d){
-		console.log('change transform3d hud');
-	} else {
-		$('div.nkProgressHUDText').html(loaderString)
-	}
+	$('div.nkProgressHUDText').html(loaderString)
 };
 
 
