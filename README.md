@@ -47,6 +47,9 @@ You can dismiss the HUD by adding the following to the end of your script:
 
     nkProgressHUD.dismiss();
 
+## Browser Support
+
+nkProgresSHUD is compatible with all modern browsers and IE8+. nkProgressHUD makes use of CSS transforms on devices that support it and falls back to jQuery animations on devices that don't.
 
 ## Credits
 
