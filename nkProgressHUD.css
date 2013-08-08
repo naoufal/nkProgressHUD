@@ -2,6 +2,7 @@
 
 /* faded out page wrapper */
 .nkProgressHUDPage {
+	font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	width: 100%; 
 	height: 100%;
 	position: fixed;
