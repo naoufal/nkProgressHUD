@@ -1,166 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>nkProgressHUD.js</title>
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <title>nkProgressHUD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />    
     <meta name="description" content="NKProgressHUD is a responsive web HUD that preoccupies users during server-side tasks.">
     <meta name="author" content="Naoufal Kadhom">
-	<!-- jQuery -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<!-- NK Loader -->
-	<link rel="stylesheet" href="nkProgressHUD.css">
-	<script src="nkProgressHUD.js"></script>	
-    <!-- CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"> 
-
-    <style type="text/css">
-
-      /* Sticky footer styles
-      -------------------------------------------------- */
-
-      html,
-      body {
-        height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
-      }
-      
-      .page-header {
-        font-size: 32px;
-        line-height: 42px;
-        font-weight: bold;
-      }
-
-      /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-      }
-      #footer {
-        background-color: #f5f5f5;
-      }
-      .container {
-        width: auto;
-        max-width: 680px;        
-        margin-top: -10px;
-        position: relative;
-      }        
-      .share {
-        position: absolute;
-        width: 100%;
-        top: -100px;
-      }   
-      .twitter-icon {
-        color: #3FAFDE;
-      }  
-        .divider {
-          display: block;
-          width: 100%;
-          padding: 0;
-          font-size: 21px;
-          line-height: 40px;
-          border: 0;
-          border-bottom: 1px solid #e5e5e5;
-        }  
-
-        .share-button {
-          font-weight: bold;
-        }      
-      @media (min-width: 768px) {
-      /* Wrapper for page content to push down footer */
-        #wrap {
-          min-height: 100%;
-          height: auto !important;
-          height: 100%;
-          /* Negative indent footer by it's height */
-          margin: 0 auto -70px;
-        }      
-      }        
-      /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 767px) {
-        .page-header {
-          font-size: 28px;
-          line-height: 38px;
-          font-weight: bold;
-        }        
-        #wrap {
-          /* Negative indent footer by it's height */
-          min-height: 100%;         
-          height: 100%;
-          margin: 0 auto -80px;
-          padding-left: 10px;
-          padding-right: 10px;
-          padding-bottom: 20px;
-          text-align: center;
-        }
-        .lead {
-          font-size: 17px;
-          line-height: 26px;
-          margin-top: -10px;
-        }
-      .container {
-        margin-top: -10px;
-        position: relative;
-      }        
-      .share {
-        position: absolute;
-        top: -100px;
-      }        
-        #footer {
-          text-align: center;
-          padding-left: 10px;  
-          padding-right: 10px;        
-        }
-      }
-
-
-
-      /* Custom page CSS
-      -------------------------------------------------- */
-      /* Not required for template or sticky footer method. */
-      .container .credit {
-        margin: 20px 0;
-      }
-
-    </style>
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- Dependencies -->  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>  
+    <script src="lib/modernizr.custom.21716.js"></script>   
+    <!-- nkProgressHUD -->      
+    <link rel="stylesheet" href="http://necolas.github.io/normalize.css/2.1.2/normalize.css">    
+    <link rel="stylesheet" href="nkProgressHUD.css">
+    <script src="nkProgressHUD.js"></script>   
 </head>
-  <body>
-    <!-- Part 1: Wrap all page content here -->
-    <div id="wrap">
-      <!-- Begin page content -->
-      <div class="container">
-        <div class="page-header">
-          nkProgressHUD.js
-        </div>
-        <p class="lead">nkProgressHUD is a responsive web HUD that preoccupies users during server-side tasks.</p>
-        <a class="btn btn-inverse btn-large" onclick="demoNKProgressHUD('Show HUD');"><b>Try the Demo</b></a>   
-      </div>
-    </div>
-    <div id="footer">
-      <div class="container">
-        <div class="share">
-          <div class="divider" style="margin-top:20px; margin-bottom: 20px;"></div>
-          <div class="btn-group">
-            <a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Ftwitter.com%2Fabout%2Fresources%2Fbuttons&amp;text=Check%20out%20nkProgressHUD,%20a%20jQuery%20plugin%20by%20Naoufal%20Kadhom&amp;tw_p=tweetbutton&amp;url=http%3A%2F%2Fnaoufal.com%2Fprojects%2Fnkprogresshud%2F&amp;via=naoufal" class="btn btn-large share-button"><span class="twitter-icon"><i class="icon icon-twitter"></i></span> Tweet</a>
-            <a href="https://github.com/naoufal/nkProgressHUD" class="btn btn-large share-button"><i class="icon icon-github"></i> Star</a>
-          </div>   
-        </div>         
-        <p class="muted credit">
-          Designed and built by <a href="http://twitter.com/naoufal">@naoufal</a>.<br>
-          Code licensed under the <a href="http://opensource.org/licenses/MIT">MIT License.</a>
-        </p>   
-      </div>
-    </div>
-<!-- FOR TWEET BUTTON -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>      
-  </body>
-                      
-
+<body>
+    <a style="background: #000; color: #fff;" onclick="demoNKProgressHUD('Show HUD');"><b>Try the Demo</b></a>     
+</body>
 </html>
 
