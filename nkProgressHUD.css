@@ -9,7 +9,7 @@
 	overflow: hidden;
 	top: 0;
 	z-index: 9999;
-	background: url('assets/images/nkprogresshud-overlay.png');
+	background: url('img/nkprogresshud-overlay.png');
 }
 /* loader wrapper */
 .nkProgressHUDWrapper {
@@ -38,7 +38,7 @@
 	height: 128px;
 	text-align: center;
 	margin: 40px auto;
-	background-image: url('assets/images/nkprogresshud-spinner.gif');
+	background-image: url('img/nkprogresshud-spinner.gif');
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -88,7 +88,7 @@
 		height: 60px;
 		text-align: center;
 		margin: 20px 0px;
-		background-image: url('assets/images/nkprogresshud-spinner.gif');
+		background-image: url('img/nkprogresshud-spinner.gif');
 		background-repeat: no-repeat;
 		background-size: 60px 60px;
 		background-position: center;
