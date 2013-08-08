@@ -15,22 +15,23 @@
     <script src="nkProgressHUD.js"></script>   
 </head>
 <body>
-    <a style="background: #000; color: #fff;" onclick="demoNKProgressHUD('Show HUD');"><b>Try the Demo</b></a>     
+    <a style="background: #000; color: #fff;"><b>Try the Demo</b></a>     
 </body>
 <script>
     //use demoProgressHUD to simulate loader animation prior to implementing
-    function demoNKProgressHUD(loaderString) {      
-        showNKProgressHUD(loaderString);
-        setTimeout(function() {
-            changeNKProgressHUD('Modify Message');
-        }, 2000);
-        setTimeout(function() {
-            changeNKProgressHUD('Dismiss HUD');
-        }, 3500);
-        setTimeout(function() {
-            dismissNKProgressHUD();
-        }, 5000);
-    };    
+    (function(){
+        $('a').on('click', function(){
+            nkProgressHUD.show('Show HUD');
+            setTimeout(function() {
+                nkProgressHUD.change('Modify Message');
+            }, 2000);
+            setTimeout(function() {
+                nkProgressHUD.change('Dismiss HUD');
+            }, 3500);
+            setTimeout(function() {
+                nkProgressHUD.dismiss();
+            }, 5000);
+        })
+    }())  
 </script>
 </html>
-
