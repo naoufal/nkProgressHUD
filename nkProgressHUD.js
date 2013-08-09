@@ -38,7 +38,7 @@ nkProgressHUD.show = function(loaderString){
 	nkProgressHUD.Variables.properties.end = nkProgressHUD.Variables.properties.start + 50;
 	
 	if (Modernizr.csstransforms3d){
-		$('.nkProgressHUDWrapper').css('transform', 'translate3d(0px, ' + (nkProgressHUD.Variables.properties.start + 20) + 'px, 0)');	
+		$('.nkProgressHUDWrapper').css('transform', 'translate3d(0px, ' + (nkProgressHUD.Variables.properties.start + 30) + 'px, 0)');	
 		//start animation
 		$('.nkProgressHUDWrapper').show();
 		$('div.nkProgressHUDText').html(loaderString)
@@ -48,7 +48,6 @@ nkProgressHUD.show = function(loaderString){
 			$(this).removeClass('animate-1000ms');    
 	    });   
 	} else {
-		console.log('works');		
 		$('.nkProgressHUDWrapper').css('margin-top', nkProgressHUD.Variables.properties.end);
 		//start animation
 		$('.nkProgressHUDWrapper').show();
@@ -70,8 +69,7 @@ nkProgressHUD.change = function(loaderString){
 //Hides HUD (Best used at the end of a script)
 nkProgressHUD.dismiss = function(){
 	if (Modernizr.csstransforms3d){
-
-		$('.nkProgressHUDWrapper').addClass('animate-1000ms').css('transform', 'translate3d(0px, ' + (nkProgressHUD.Variables.properties.start) + 'px, 0)').css('opacity', 0);	
+		$('.nkProgressHUDWrapper').addClass('animate-1000ms').css('transform', 'translate3d(0px, ' + (nkProgressHUD.Variables.properties.start + 20) + 'px, 0)').css('opacity', 0);	
 		setTimeout(function() {
 			$('.nkProgressHUDPage').css('opacity', 0);
 		}, 300);
