@@ -36,19 +36,24 @@ nkProgressHUD.show = function(loaderString){
 	nkProgressHUD.Variables.properties.height = $('.nkProgressHUDWrapper').height();	
 	nkProgressHUD.Variables.properties.start = ((nkProgressHUD.Variables.globalVars.windowHeight - nkProgressHUD.Variables.properties.height) / 2) - ((nkProgressHUD.Variables.globalVars.windowHeight / 100) * 5);
 	nkProgressHUD.Variables.properties.end = nkProgressHUD.Variables.properties.start + 50;
-	$('.nkProgressHUDWrapper').css('margin-top', nkProgressHUD.Variables.properties.end);
 	
 	if (Modernizr.csstransforms3d){
-		$('.nkProgressHUDWrapper').show();
-		$('div.nkProgressHUDText').html(loaderString)
-		$('.nkProgressHUDPage').addClass('animate').css({'opacity': 1,});	
-		$('.nkProgressHUDWrapper').addClass('animate-10s').css({'margin-top': nkProgressHUD.Variables.properties.start});	
-
-	} else {
+		$('.nkProgressHUDWrapper').css('transform', 'translate3d(0px, ' + (nkProgressHUD.Variables.properties.start + 20) + 'px, 0)');	
 		//start animation
 		$('.nkProgressHUDWrapper').show();
 		$('div.nkProgressHUDText').html(loaderString)
-		$('.nkProgressHUDWrapper').animate({marginTop: nkProgressHUD.Variables.properties.start,}, {duration: 1000,queue: false});
+		$('.nkProgressHUDPage').addClass('animate').css({'opacity': 1,});	
+		$('.nkProgressHUDWrapper').addClass('animate-1000ms').css('transform', 'translate3d(0px, ' + (nkProgressHUD.Variables.properties.start - 20) + 'px, 0)');	
+	    $('.nkProgressHUDWrapper').on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function(){ 
+			$(this).removeClass('animate-1000ms');    
+	    });   
+	} else {
+		console.log('works');		
+		$('.nkProgressHUDWrapper').css('margin-top', nkProgressHUD.Variables.properties.end);
+		//start animation
+		$('.nkProgressHUDWrapper').show();
+		$('div.nkProgressHUDText').html(loaderString)
+		$('.nkProgressHUDWrapper').animate({marginTop: nkProgressHUD.Variables.properties.start}, {duration: 1000,queue: false});
 		$('.nkProgressHUDPage').fadeIn();		
 	}		
 };
@@ -65,7 +70,15 @@ nkProgressHUD.change = function(loaderString){
 //Hides HUD (Best used at the end of a script)
 nkProgressHUD.dismiss = function(){
 	if (Modernizr.csstransforms3d){
-		console.log('dismiss transform3d hud');
+
+		$('.nkProgressHUDWrapper').addClass('animate-1000ms').css('transform', 'translate3d(0px, ' + (nkProgressHUD.Variables.properties.start) + 'px, 0)').css('opacity', 0);	
+		setTimeout(function() {
+			$('.nkProgressHUDPage').css('opacity', 0);
+		}, 300);
+		//remove html
+		setTimeout(function() {
+			$('.nkProgressHUDPage').remove();
+		}, 1000);	
 	} else {
 		$('.nkProgressHUDWrapper').animate({marginTop: nkProgressHUD.Variables.properties.end,}, {duration: 1000,queue: false});
 		setTimeout(function() {

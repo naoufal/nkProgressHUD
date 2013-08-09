@@ -20,14 +20,14 @@
 -------------------------------------------------- */
 .animate {
 	@include transition-property(all);
-	@include transition-duration(0.6s);
-	@include transition-timing-function(ease-in); 
+	@include transition-duration(0.3s);
+	@include transition-timing-function(ease-out); 
 }
 
-.animate-10s {
+.animate-1000ms {
 	@include transition-property(all);
-	@include transition-duration(0.9s);
-	@include transition-timing-function(ease-in); 
+	@include transition-duration(1s);
+	@include transition-timing-function(ease-out); 
 }
 
 /* Has CSS Transforms 3D
