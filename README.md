@@ -3,7 +3,7 @@ nkProgressHUD
 
 nkProgressHUD is a responsive web HUD that preoccupies users during server-side tasks.
 
-![nkProgressHUD](http://naoufal.com/assets/img/nkprogresshud.png)
+![nkProgressHUD](http://naoufal.com/projects/nkprogresshud/screens/responsive-view.png)
 
 Demo
 ----------
@@ -11,7 +11,7 @@ Demo
 
 Requirements
 ----------
-jQuery & Modernizr (csstransforms3d)
+jQuery & Modernizr
 
 How to use
 ----------
@@ -53,4 +53,4 @@ nkProgresSHUD is compatible with all modern browsers and IE8+. nkProgressHUD mak
 
 ## Credits
 
-nkProgressHUD is brought to you by [Naoufal Kadhom](https://twitter.com/naoufal). The spinner icon was generated over at [Preloaders](http://preloaders.net/). nkProgressHUD is inspired by [Sam Vermette](http://samvermette.com)'s [SVProgressBar](https://github.com/samvermette/SVProgressHUD).
+nkProgressHUD is brought to you by [Naoufal Kadhom](https://twitter.com/naoufal). The spinner icon was generated over at [Preloaders](http://preloaders.net/). nkProgressHUD is inspired by [Sam Vermette](http://samvermette.com)'s [SVProgressHUD](https://github.com/samvermette/SVProgressHUD).
