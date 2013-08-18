@@ -21,8 +21,8 @@ To get started, include the files in the `head` section of your HTML document.  
     <head>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
         <script src="lib/modernizr.custom.21716.js"></script>   
-        <link rel="stylesheet" href="http://naoufal.com/projects/nkprogresshud/nkProgressHUD.css" type="text/css" media="screen"/>
-        <script type="text/javascript" src="http://naoufal.com/projects/nkprogresshud/nkProgressHUD.js"></script>
+        <link rel="stylesheet" href="nkProgressHUD.css" type="text/css" media="screen"/>
+        <script type="text/javascript" src="nkProgressHUD.js"></script>
     </head>
 
 ### Display the HUD
