@@ -6,4 +6,3 @@ config.rb
 *.sublime-workspace
 
 assets/
-index.html
