@@ -42,7 +42,7 @@
 		overflow: hidden;
 		top: 0;
 		z-index: 9999;
-		background: url('img/nkprogresshud-overlay.png');
+		background: url('img/overlay-black.png');
 		
 		.nkProgressHUDWrapper {
 			@include clearfix;
@@ -141,7 +141,7 @@
 		overflow: hidden;
 		top: 0;
 		z-index: 9999;
-		background: url('img/nkprogresshud-overlay.png');
+		background: url('img/overlay-black.png');
 		
 		.nkProgressHUDWrapper {
 			@include clearfix;			
