@@ -3,7 +3,7 @@ nkProgressHUD
 
 nkProgressHUD is a responsive web HUD that preoccupies users during server-side tasks.
 
-![nkProgressHUD](http://naoufal.com/projects/nkprogresshud/screens/responsive-view.png)
+![nkProgressHUD](http://naoufal.github.io/nkProgressHUD/demo-assets/screenshot.png)
 
 Demo
 ----------
